@@ -1,0 +1,237 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+    font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+    line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+    color: #000000; /* Hex Color Black */
+    background-size: 100%;
+    background-color:#e9fff2
+}
+
+a {
+    color:#5aa079;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5aa079;
+    text-decoration: underline;
+}
+
+#accordion .ui-accordion-header { 
+    background: #bfe8d1; 
+    color: #407959;
+}
+
+#accordion .ui-accordion-content a { 
+    color: #5aa079;
+}
+
+a:visited{
+    color: #5aa080;
+
+}
+
+#top_row h1 {
+    color: #124127;
+    font-size: 3.75em;
+    letter-spacing: -2px;
+}
+
+#top_row h3 {
+    font-size: 1.125em;
+    font-weight: 200;
+}
+
+#top_row img {
+    width: 5%;
+    height: auto;
+}
+
+#bio {
+    margin-left: 3em;
+    font-size: .875em;
+}
+
+#bio a {
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+    color: #000;
+}
+
+#bio a:hover {
+    color: #5aa079;
+}
+
+#container {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* The top row - spans all columns for header and nav */
+#top_row {
+	border-bottom: 1px dotted #bfe8d1;
+	padding: .5em .5em 3em .5em; 
+	
+	/* http://www.digizol.com/2006/12/margin-vs-padding-css-properties.html */ 
+	/* top, right, bottom, left */
+}
+
+#top_row header {
+    margin-bottom: -2.5em;
+}
+
+#top_row nav {
+    float: right;
+}
+
+#top_row nav a {
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px;
+	color: #000000;
+}
+
+	/* http://www.w3schools.com/cssref/pr_class_display.asp */
+	/* Creating a Links display option and roll-over / Pseudo-Element */
+	/* CSS pseudo-elements are used to add special effects to some selectors. */
+    /* More at http://www.w3schools.com/css/css_pseudo_elements.asp */
+
+#top_row nav a.selected {
+    background: #d1e4da;
+    color: #5aa079;	
+}
+    
+#top_row nav a.selected:hover {
+    background: #d1e4da;
+    color: #5aa079;	
+}
+    /* Hover adds special style to an element when you mouse over it */
+
+#top_row nav a:hover {	
+    background: #d1e4da;
+    color: #5aa079;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    margin: 0;
+    padding: 1em;
+    border-right: 1px dotted #bfe8d1;
+}
+
+#content h3 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+#content h4 {
+    font-size: 1.25em;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+}
+
+#content h6 {
+    font-size: 1em;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content img {
+    float: left;
+    margin: 10px;
+}
+
+#sidebar {
+	float: left;
+	padding: 1em;
+	font-size: .875em;	
+    /* border-left: 1px solid gray; */
+}
+
+#sidebar h3 {
+	font-size: 1.125em;
+	border-bottom: 1px dotted #bfe8d1;
+}
+
+footer {
+	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+	margin: 0;
+	padding: .5em;
+	color: #000000;
+	font-variant: small-caps; 
+	font-size: .813em;
+	text-align: center;
+	border-top: 1px dotted #bfe8d1;
+	
+}
+
+table {
+    width: 70%;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#5aa079;
+    border-spacing: 3px;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+    background-color: #cde6d8;
+}
+
+#sidebar table {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#5aa079;
+    border-spacing: 3px;
+    margin: auto;
+    table-layout: auto;
+    
+}
+
+th {
+    height: 40px;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000
+}
+
+form {
+    width: 75%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#5aa079;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
+
+html { overflow-y: scroll; }
+
+iframe {
+    display:block;
+    margin:auto;
+}
+
+

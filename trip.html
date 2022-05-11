@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="keywords" content="Duquesne Incline">
+	<meta name="description" content="Field Trips to the Duquesne Incline">
+
+	<!-- The title will appear in the menu bar of the browser -->
+    <title>Field Trips to the Duquesne Incline</title>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <!-- External Links to JS files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="top_row">
+            <header>
+                <img src="images/logo.png" alt="logo"/>
+                <h1>Duquesne Incline</h1>
+            </header>
+            <br/>
+            <p>Voted top ten sites in the world for viewing a cityscape by USA Today</p>
+    
+            <nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a>
+                <a href="thingstodo.html">Things to Do</a>
+                <a class="selected" href="trip.html">Field Trips</a>
+                <a href="contact.html">Contact</a>
+                <!-- These anchor takes us to another page within the website; hence it is called a relative link. -->	
+            </nav>
+        </div>  
+
+        <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+            
+            <h3>Field Trips for Students & Youth Groups</h3>
+
+            A free field trip program is available for students and youth groups of ten 
+            or more daily – except Saturdays and Sundays after 12:00 noon due to weekend 
+            crowds and limited space. The program includes:
+            <ul>
+                <li>A teacher's lesson packet for students' specific grade leve</li>
+                <li>A round trip ride on the Duquesne Incline</li>
+                <li>A history of inclines in Pittsburgh</li>
+                <li>A discussion about Pittsburgh's industrial past</li>
+                <li>A visit to the machine room to observe the original hoisting equipment in operation and learn about the engineers who built it</li>
+                <li>A panoramic view of Downtown Pittsburgh and The North Shore from our observation deck 400 feet above the three rivers</li>
+                <li>A brief history of the French and Indian War from which the city arose</li>
+            </ul>
+            Visit the Home tab to view group fare rates!
+
+            <h4>Make a reservation today!</h4>
+            * indicates required fields
+            <form onsubmit="return validate()" action="mailto:duq.incline@duquesneincline.org">
+                <fieldset>
+                    <legend>Contact Info</legend>
+    
+                    <label for="uname">Tour Group Name:*</label><br/>
+                    <input type="text" id="tourname" name="tourname" value="" size="20" maxlength="250" required><br/><br/>
+                    
+                    <label for="uname">School Name:</label> <br/>
+                    <input type="text" id="schoolname" name="schoolname" value="" size="20" maxlength="250"><br/><br/>
+                    
+                    <label for="uname">Contact Name:*</label> <br/>
+                    <input type="text" id="uname" name="uname" value="Bob" size="20" maxlength="250" required><br/><br/>
+
+                    <label for="phone">Phone Number (no dashes or spaces):*</label><br/>
+                    <input type="text" id="phone" name="phone" value="" required ><br/><br/>
+                
+                    <label for="address">Address:</label><br/>
+                    <input type="text" id="address" name="address" value="Street Address">
+                    <input type="text" id="address2" name="address2" value="Address Line 2"><br/>
+                    <input type="text" id="city" name="city" value="City">
+                    <input type="text" id="state" name="state" value="State/Province/Region"><br/>
+                    <input type="text" id="zip" name="zip" value="Zip/Postal Code">
+                    <input type="text" id="country" name="country" value="Country"><br/><br/>
+                
+    
+                    <label for="email">Please provide your email address:*</label><br/>
+                    <input type="email" id="email" name="email" value="abc@defg.com" required><br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Group Size</legend>
+
+                    <label for="5under">Ages 5 and under:</label><br/>
+                    <input type="text" id="5under" name="5under" value=""><br/><br/>
+
+                    <label for="6-11">Ages 6 to 11:</label><br/>
+                    <input type="text" id="6-11" name="6-11" value=""><br/><br/>
+
+                    <label for="12-64">Ages 12 to 64:</label><br/>
+                    <input type="text" id="12-64" name="12-64" value=""><br/><br/>
+
+                    <label for="senior">Senior (65 and up):</label><br/>
+                    <input type="text" id="senior" name="senior" value=""><br/><br/>
+
+                    <label for="arrivalpoint1">Point of Arrival:</label><br/>
+                    <input type="radio" id="arrivalpoint1" name="arrivalpoint1" value="Yes">
+                    <label for="arrivalpoint1">Upper Station</label><br/>
+                    <input type="radio" id="arrivalpoint2" name="arrivalpoint2" value="Yes">
+                    <label for="arrivalpoint2">Lower Station</label><br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Trip/Tour Options</legend>
+
+                    <label for="tripoption1">Trip Options:</label><br/>
+                    <input type="radio" id="tripoption1" name="tripoption1" value="Yes">
+                    <label for="tripoption1">Round Trip</label><br/>
+                    <input type="radio" id="tripoption2" name="tripoption2" value="Yes">
+                    <label for="tripoption2">One Way</label><br/><br/>
+
+                    <label for="touroption1">Tour Options:</label><br/>
+                    <input type="radio" id="touroption1" name="touroption1" value="Yes">
+                    <label for="arrivalpoint1">Guided Tour</label><br/>
+                    <input type="radio" id="touroption2" name="touroption2" value="Yes">
+                    <label for="touroption2">No Tour</label><br/><br/>
+
+                    <label for="day">Date of Arrival:*</label> <br/>
+                    <input type="date" id="day" name="day" value="mm/dd/yyyy" required><br/><br/>
+
+                    <label for="time">Estimated Arrival Time:*</label><br/>
+                    <input type="text" id="time" name="time" value="" required><br/><br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Options</legend>
+
+                    <label for="pay1">We will be paying by:</label><br/>
+                    <input type="radio" id="pay1" name="pay1" value="Yes">
+                    <label for="pay1">Cash</label><br/>
+                    <input type="radio" id="pay2" name="pay2" value="Yes">
+                    <label for="pay2">Check</label><br/><br/>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other</legend>
+
+                    <label for="other">Other notes of comments:</label><br/>
+                    <textarea id="other" name="other" rows="3" cols="40" maxlength="1000"></textarea><br/><br/>
+                    
+                </fieldset>
+                <fieldset>
+                    <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+                </fieldset>
+            </form>
+
+            
+                
+
+        </div> <!-- Close content --> 
+        
+        
+        <div id="sidebar">
+            <p>
+                <br/><strong>Hours of Operation</strong><br/>
+                Mondays		05:30AM - 12:30AM<br/>
+                Tuesdays	05:30AM - 12:30AM<br/>
+                Wednesdays 	05:30AM - 12:30AM<br/>
+                Thursdays 	05:30AM - 12:30AM<br/>
+                Fridays		05:30AM - 12:30AM<br/>
+                Saturdays 	05:30AM - 12:30AM<br/>
+                Sundays & Holidays 07:00AM - 12:30AM<br/><br/>
+
+                We're open 365 days a year! 
+            </p>
+
+            <table>
+                <tr>
+                    <td>
+                        <strong>Parking Address:</strong><br/>
+                        1197 West Carson St.<br/>
+                        Pittsburgh, PA 15219<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Mailing Address:</strong><br/>
+                        1220 Grandview Ave.<br/>
+                        Pittsburgh, PA 15211<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        412.381.1665<br/>
+                        duq.incline@duquesneincline.org<br/>
+                        <a href="http://www.duquesneincline.org/" target="_blank">http://www.duquesneincline.org/</a>
+                    </td>
+                    
+                </tr>
+
+    
+            </table>
+           
+            
+            <br/>
+            <a href="mailto:duq.incline@duquesneincline.org"><img src="images/email.png" alt="Email Icon"></a>
+            <a href="https://www.facebook.com/TheDuquesneIncline/" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"/></a>
+            <a href="http://davedicello.com/places/pittsburgh/" target="_blank"><img src="images/photos.png" alt="Photos" width="25" height="25"/></a>
+            <a href="https://www.youtube.com/watch?v=bSLvrz5GraI" target="_blank"><img src="images/youtubeLogo.png" alt="YouTube" width="30" height="30"/></a>
+        </div> <!--Close sidebar  -->
+        
+        <footer>
+
+            &copy; Duquesne Incline<br/>
+        </footer>
+    </div>
+    
+
+</body>
+
+</html>
